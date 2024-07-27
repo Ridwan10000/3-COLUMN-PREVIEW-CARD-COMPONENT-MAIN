@@ -38,6 +38,7 @@
   .container{
     width: 80vw;
     border-radius: 0.5rem;
+    overflow:hidden;
   }
   section{
     padding: 2.8rem;
@@ -85,7 +86,7 @@
   .learn-more:hover{
     background-color: transparent;
     color: hsl(0, 0%, 95%);
-    border: 3px solid  hsl(0, 0%, 95%);
+    outline: 3px solid  hsl(0, 0%, 95%);
     cursor: pointer;
   }
   @media screen and (min-width:1150px) {
