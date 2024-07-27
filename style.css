@@ -1,0 +1,99 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color:  hsl(0, 0%, 95%);
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .container{
+    width: 80vw;
+    border-radius: 0.5rem;
+  }
+  section{
+    padding: 2.8rem;
+  }
+  h1{
+    font-size: 1.8rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 2rem;
+    color:  hsl(0, 0%, 95%);
+  }
+  p{
+    margin-top: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+  }
+  .sedans{
+    background-color: hsl(31, 77%, 52%);
+  }
+  .sedans > button {
+    color: hsl(31, 77%, 52%);
+  }
+  .suvs{
+    background-color: hsl(184, 100%, 22%);
+  }
+  .suvs > button {
+    color:hsl(184,100%,22%);
+  }
+  .luxury{
+    background-color:  hsl(179, 100%, 13%);
+  }
+  .luxury > button {
+    color:hsl(179,100%,13%);
+  }
+  .learn-more{
+    padding: 0.5rem 1.5rem;
+    border-radius: 4rem;
+    border: none;
+    margin-top:2rem;
+    margin-left: 0.3rem;
+    background-color:  hsl(0, 0%, 95%);
+  }
+  .learn-more:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: 3px solid  hsl(0, 0%, 95%);
+    cursor: pointer;
+  }
+  @media screen and (min-width:1150px) {
+    .container {
+      display: flex;
+      max-width: 1000px;
+    }
+    section{
+      padding:5rem 3rem;
+    }
+  }
